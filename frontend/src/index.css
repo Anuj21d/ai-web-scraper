@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  /* Papertrail color palette */
+  --color-paper-canvas: #f4f0e6;
+  --color-paper-surface: #faf8f1;
+  --color-paper-ink: #25251f;
+  --color-paper-muted: #68675e;
+  --color-paper-border: #d8d2c4;
+  --color-paper-accent: #a44f35;
+  --color-paper-selection: #e7e0d2;
+
+  /* Typography */
+  --font-serif: "Newsreader", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Global defaults */
+html {
+  background: var(--color-paper-canvas);
+  color: var(--color-paper-ink);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--color-paper-selection);
+}
